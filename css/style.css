@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&family=Raleway:wght@200;300;400;600;800&display=swap');
+
+*{font-family: 'Raleway', sans-serif;
+color: #ffffff;
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+body{
+	background-image: url(../images/obras/background.jpg);
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+.displayFlex{
+	display: flex;
+}
+
+.displayRowCenter{
+	justify-content: center;
+	align-items: center;
+}
+
+.displayRowSpaceEvenly{
+	justify-content: space-evenly;
+	align-items: center ;
+}
+
+.displayColumnCenter{
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.parallax {
+	height: 100vh;
+	max-width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+h1{
+	font-size: 4em;
+	font-weight: 400;
+	color: rgb(236,179,101);
+	text-align: center;
+	padding-left: .5em;
+}
+
+/*Nav*/
+
+nav {
+	align-self: center;
+}
+
+nav li{
+	text-align: center;
+	list-style: none;
+	margin: 1em;/*sacar margin cuando ponga boton hamburguesa*/
+}
+
+nav a{
+	text-decoration: none;
+	font-size: 1em;
+	color: #ffffff;
+	border: rgb(4, 28, 50) 1px solid;
+	background-color: rgba(4, 28, 50, .7);
+	padding: .5em 1em;
+}
+
+#mainLogo{
+	font-size: 0.6em;
+	border: none;
+	background-color: rgba(0,0,0,0);
+	padding: 0;
+}
+
+/*Footer*/
+footer{
+	background-color:rgba(4,28,50, .5);
+	font-size: 0.8em;
+	width: 100%;
+	padding: 1em 0;
+}
+
+footer ul{
+	padding: 1em 0;
+}
+
+footer li{
+	list-style: none;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+div.copyright {
+	text-align: center;
+	border-top: rgb(4,28,50) solid 1px;
+	padding-top: 0;
+	background-color:rgba(4,28,50, .5);
+}
+
+/*Home*/
+video{
+min-width:100%;
+min-height:100%;
+width: auto;
+height: auto;
+position: fixed;
+top:0;
+left:0;
+z-index: -100;
+background-size: cover;
+}
+
+.construccion {
+	text-align: center;
+	color: rgb(236,179,101);
+	font-size: 1.8em;
+	font-weight: 800;
+	letter-spacing: .1em;
+	padding-left: .1em;
+}
+
+.segura {
+	text-align: center;
+	font-size: 1em;
+	font-weight: 600;
+	background-color: rgba(4,28,50,.7);
+	letter-spacing: 0.3em;
+	padding-left: .3em;
+	margin: 0 .05em;
+}
+
+/*Sección Qué hacemos?*/
+main.queHacemos {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+main.queHacemos p{
+	font-size: 1.4em;
+	font-weight: 400;
+	color: rgb(236,179,101);
+	padding-right: 1em;
+}
+
+main.queHacemos h2{
+	font-weight: 300;
+	line-height: 3em;
+}
+
+/*Sección Obras*/
+.contenedor{
+	position: relative;
+	width: 100vw;
+	height: 80vh; 
+}
+
+section.contenedor img{
+	object-fit: cover;
+	width: 100vw;
+	height: 80vh;
+}
+
+.textoEncimaCentrado{
+	font-size: 1.4em;
+	text-align: center;
+	color: rgb(236,179,101);
+	background-color: rgba(4, 28, 50, .7);
+	padding: 0.25em 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Sección Contacto*/
+.displayContacto{
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.textoContactate {
+	color: rgb(236,179,101);
+	font-weight: 400;
+	margin-bottom: 1.4em;
+	transform: translateX(-.4em);
+}
+
+.iconMaps{
+	list-style-image: url('../images/icons/icon-maps.png');
+}
+
+.iconWhatsapp{
+	list-style-image: url('../images/icons/icon-whatsapp.png');
+}
+
+.iconMail{
+	list-style-image: url('../images/icons/icon-mail.png');
+}
+
+section.contactate li{
+	margin: 0 0 1em 2em;
+}
+
+section.contactate strong{
+	font-weight: 400;
+}
+
+iframe{
+	object-fit: cover;
+	text-align: center;
+	width: 100vw;
+	height: 50vh;
+}
+
+/*Página Quienes Somos*/
+.textoQuienesSomos{
+	background-color: rgba(4, 28, 50, .7);
+	padding: 1em;
+	margin: 1em;
+	height: auto;
+	line-height: 1.5em;
+}
+
+/*Página Obras*/
+.imgObras{
+	object-fit: cover;
+	width: 100%;
+	height: 20em;	
+}
+
+.titulosObras{
+	font-size: 1.4em;
+	font-weight: 400;
+	text-align: center;
+	color: rgb(236,179,101);
+	background-color: rgba(4, 28, 50, .7);
+	padding: 0.25em 1.5em;
+}
+
+.textosObras{
+	width: 100%;
+	background-color: rgba(4, 28, 50, .7);
+	padding: 1em;
+	height: auto;
+	line-height: 1.5em;
+}
+
+div.displayObras {
+	margin-bottom: 1.5em;
+}
+
+/*Página Servicios*/
+main.servicios li{
+	list-style: none;
+}
+
+.titulosServicios{
+	font-weight: 300;
+	line-height: 3em;
+	width: 100%;
+	background-color: rgba(4, 28, 50, .7);
+	padding: 1em;
+	height: auto;
+	line-height: 1.5em;
+}
+main.servicios{
+	margin: 1em 0;
+}
+
+/*Página Contacto*/
+.form{
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: rgba(4, 28, 50, .7);
+}
+
+.button{
+	min-width: 25%;
+	margin-top: 1em;
+	background-color: rgba(4, 28, 50, .7);
+}
+
+fieldset.form h2{
+	color: rgb(236,179,101);
+	font-weight: 400;
+}
+
+fieldset.form h3{
+	margin-top: 1em;
+	text-align: left;
+	font-weight: 400;
+}
+
+.textColor{
+	width: 80%;
+	color: black;
+}
+
+/* ============Breakpoint============*/
+@media only screen and (min-width:768px) {
+	/*Home*/
+	.logo {	grid-area: logo;}
+	.navIzq {grid-area: navIzq;}
+	.navDer {grid-area: navDer;}
+	.construccionSegura {grid-area: construccionSegura;}
+	.queHacemos {grid-area: queHacemos;}
+	.obraI {grid-area: obraI;}
+	.obraII {grid-area: obraII;}
+	.obraIII {grid-area: obraIII;}
+	.obraIV {grid-area: obraIV;}
+	.contactate {grid-area: contactate;}
+	.map {grid-area: map;}
+	.footer{grid-area: footer;}
+	.copyright {grid-area: copyright;}
+
+	.gridHome {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(8, auto);
+		grid-template-areas: 
+		"navIzq navIzq navIzq logo logo navDer navDer navDer"
+		". construccionSegura construccionSegura construccionSegura construccionSegura construccionSegura construccionSegura ."
+		"queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos"
+		"obraI obraI obraI obraI obraII obraII obraII obraII"
+		"obraIII obraIII obraIII obraIII obraIV obraIV obraIV obraIV"
+		"contactate contactate contactate contactate map map map map"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+	nav li{
+		margin: .5em 0;
+	}
+
+	.construccion {
+		font-size: 3.5em;
+	}
+
+	.segura {
+		font-size: 2em;
+	}
+
+	main.queHacemos {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	main.queHacemos p{
+		font-size: 3em;
+		width: 30%
+	}
+
+	.contenedor{
+		width: 50vw;
+		height: 50vh; 
+	}
+
+	section.contenedor img{
+		width: 50vw;
+		height: 50vh;
+	}
+
+	iframe{
+		max-width: 90%;
+		height: 50vh;
+	}
+
+	.displayNavFooter{
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	/*Página Quienes Somos*/
+	.quienesSomos {grid-area: quienesSomos;}
+
+	.gridQuienesSomos{
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+		"navIzq navIzq navIzq logo logo navDer navDer navDer"
+		"quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+	.displayQuienesSomos{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 1em;
+	}
+
+	.textoQuienesSomos{
+		max-width: 50%;
+	}
+
+	/*Página Obras*/
+	.obras {grid-area: obras;}
+
+	.gridObras{
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+		"navIzq navIzq navIzq logo logo navDer navDer navDer"
+		"obras obras obras obras obras obras obras obras"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+	.imgObras{
+		width: 50%;	
+	}
+
+	.textosObras{
+		width: 50%;
+	}
+
+	.displayObras{
+		display:flex;
+		flex-flow: row wrap;
+	}
+
+	/*Página Servicios*/
+	.servicios {grid-area: servicios;}
+
+	.gridServicios{
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+		"navIzq navIzq navIzq logo logo navDer navDer navDer"
+		"servicios servicios servicios servicios servicios servicios servicios servicios"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+	/*Página Contacto*/
+	.contacto {grid-area: contacto;}
+
+	.gridContacto{
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+		"navIzq navIzq navIzq logo logo navDer navDer navDer"
+		"contacto contacto contacto contacto contacto contacto contacto contacto"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+}
+
+/* ============Breakpoint============*/
+@media only screen and (min-width:1200px) {
+	/*Home*/
+	.gridHome {
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(7, auto);
+		grid-template-areas: 
+		". navIzq navIzq logo logo navDer navDer ."
+		". construccionSegura construccionSegura construccionSegura construccionSegura construccionSegura construccionSegura ."
+		"queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos"
+		"obraI obraI obraII obraII obraIII obraIII obraIV obraIV"
+		"contactate contactate contactate contactate map map map map"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+	.construccion {
+		font-size: 4.5em;
+	}
+
+	.segura {
+		font-size: 2.5em;
+	}
+
+	main.queHacemos p{
+		font-size: 4em;
+		width: 40%
+	}
+
+	.contenedor{
+	width: 25vw;
+	height: 80vh; 
+	}
+
+	section.contenedor img{
+	width: 25vw;
+	height: 80vh;
+	}
+
+	/*Página Quienes Somos*/
+	.gridQuienesSomos{
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		". navIzq navIzq logo logo navDer navDer ."
+		"quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+	/*Página Obras*/
+	.gridObras{
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		". navIzq navIzq logo logo navDer navDer ."
+		"obras obras obras obras obras obras obras obras"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+	/*Página Servicios*/
+	.gridServicios{
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		". navIzq navIzq logo logo navDer navDer ."
+		"servicios servicios servicios servicios servicios servicios servicios servicios"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+	/*Página Contacto*/
+	.gridContacto{
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		". navIzq navIzq logo logo navDer navDer ."
+		"contacto contacto contacto contacto contacto contacto contacto contacto"
+		"footer footer footer footer footer footer footer footer"
+		"copyright copyright copyright copyright copyright copyright copyright copyright";
+	}
+
+
+}	

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto – MDV Constructora</title>
+	<link rel="shortcut icon" href="../images/logos/favicon.png">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="gridContacto">
+		<nav class="logo"> 
+			<ul class="displayFlex displayColumnCenter">
+						<li><a id="mainLogo" href="../index.html"><img src="../images/logos/logo-mdv.png" alt="logo de MDV Constructora"></a></li>
+						<li id="mainLogo">MDV | CONSTRUCTORA</li>
+			</ul>
+		</nav>
+
+		<nav class="navIzq">
+			<ul class="displayFlex displayRowSpaceEvenly">
+						<li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+						<li><a href="obras.html">OBRAS</a></li>
+			</ul>	
+		</nav>
+
+		<nav class="navDer">
+			<ul class="displayFlex displayRowSpaceEvenly">
+						<li><a href="servicios.html">SERVICIOS</a></li>
+						<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>	
+		</nav>
+
+		<main class="contacto">
+		
+			<h1>Contacto</h1>
+			<div>
+				<form class="displayFlex displayRowCenter" action="consultas.php">
+					<fieldset class="displayFlex displayColumnCenter form">
+						<legend><h2>¿Cómo podemos ayudarte?</h2></legend>
+
+						<div class="displayFlex displayColumnCenter">
+
+						<label for="nombre apellido"><h3>Nombre y Apellido:</h3></label>
+						<input class="textColor" type="text" id="nombre" placeholder="Nombre" required="">
+						<input class="textColor" type="text" id="apellido" placeholder="Apellido" required="">
+
+						<label for="phone"><h3>Celular:</h3></label>
+						<input class="textColor" type="tel" id="phone" required="">
+						
+						<label for="email"><h3>Correo electrónico:</h3></label>
+						<input class="textColor" type="email" id="email" required="">
+						</div>
+						
+						<label class="displayFlex displayColumnCenter" for=""><h3>Medio de contacto de preferencia:</h3>
+							<div class="displayRowCenter">
+								<input type="radio" id="llamada" name="contactar" value="Llamar">
+								<label for="llamada">Llamada telefónica</label>
+							</div>
+
+							<div class="displayRowCenter">
+								<input type="radio" id="wapp" name="contactar" value="Enviar mje WhatsApp">
+								<label for="wapp">WhatsApp</label>
+							</div>
+
+							<div class="displayRowCenter">
+								<input type="radio" id="mail" name="contactar" value="Enviar mail">
+								<label for="mail">Correo electrónico</label>
+							</div>
+						</label>
+							
+						<label class="displayFlex displayColumnCenter" for=""><h3>Horario de contacto de preferencia:</h3>
+							<div class="displayRowCenter">
+								<input type="checkbox" id="mañana" value="Mañana">
+								<label for="mañana">Lunes a viernes por la mañana</label>
+							</div>
+							
+							<div class="displayRowCenter">
+								<input type="checkbox" id="tarde" value="Tarde">
+								<label for="tarde">Lunes a viernes por la tarde</label>
+							</div>
+						</label>
+
+						<label class="displayFlex displayColumnCenter" for="mensaje"><h3>Mensaje</h3>
+							<textarea class="textColor" name="" id="mensaje" cols="50" rows="10"></textarea>
+						</label>
+						
+						<div class="displayFlex displayRowCenter">
+							<input class="button" type="submit" value="Enviar">	
+						</div>
+			
+					</fieldset>
+				</form>
+			</div>	
+		</main>
+		
+		<footer class="footer displayFlex displayColumnCenter displayNavFooter">
+			<a href="../index.html" class="displayFlex displayColumnCenter"><img src="../images/logos/logo-mdv.png" alt="logo de MDV Constructora"></a>
+				
+			<ul>MAPA DEL SITIO
+				<li><a href="quienes-somos.html">Quienes somos</a></li>
+				<li><a href="obras.html">Obras</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+			
+			<div class="displayFlex displayRowCenter">
+				<a href="https://www.facebook.com/" target="_blank">
+				<img src="../images/icons/icon-facebook.png" alt="vinculo a facebook"></a>
+				<a href="https://www.instagram.com/" target="_blank">
+				<img src="../images/icons/icon-instagram.png" alt="vinculo a instagram"></a>
+			</div>
+		</footer>
+
+		<div class="copyright">
+			<p><small>2022 | MDV Constructora. Todos los derechos reservados</small></p>
+		</div>		
+
+	</div>
+</body>
+</html>
